@@ -32,20 +32,28 @@ li a {
 
 li a:hover:not(.active) {
     background-color: skyblue;
+        }
 
 li a.active {
     color: white;
     background-color: #4CAF50;
 }
         
+        .container{
+            padding: 80px 120px;
+        }
+        
     </style>
     <!-- CSS -->
-       
+        <!-- BOOTSTRAP CSS -->
+       <link rel="stylesheet" href="@css/bootstrap.min.css">
         
         
         
     <!-- JAVASCRIPT -->
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         
         
@@ -59,12 +67,85 @@ li a.active {
             <li><a href="contact_us.html#">Contact Us</a></li>
             <li style="float: right;"><a href="#">Log In</a></li>
         </ul>
-    
-    
-    
+        
+        <!-- ABOUT US CONTENT USING BOOTSTRAP COLLAPSE @ W3SCHOOL -->
+        <div class="container text-center">
+          <h3>ABOUT US</h3>
+            <!--<p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
+          <div class="panel-group" id="accordion">
+              
+              
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">What is FOi?</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">FOi is stand for Food Ordering IPB.</div>
+              </div>
+            </div>
+              
+              
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Who invent FOi?</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">FOi was invented by two students of Diploma Science Computer.</div>
+              </div>
+            </div>
+              
+              
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">When was FOi invented?</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">FOi was invented in their last semester as the final year project.</div>
+              </div>
+            </div>
+              
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Why FOi?</a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">The problem of ordering manually written at a piece of paper of what the menu is and the name of the customer. Then, the paper will be pass to the chef to cook and packaging. Next, the waiter will call the customer’s name and charge based on the order. The disadvantages of manually written is<br><br>
+                    <ol type="1">
+                        <li style="display: list-item;">There will be misunderstanding of calling the customer’s name. </li>
+                        <li style="display: list-item;">Paper is light-weight so it will sure to be either blown away or disappeared before anyone eyes. </li>
+                        <li style="display: list-item;">The waiter will be charge the customer based on their mood, seriously, mood. </li>
+
+                    </ol>
+              
+            </div>
+          </div>
+        </div>
+              
+
+          </div> 
+            
+        </div>
+
+
+
     
     
     
     
     </body>
 </html>
+
+<!-- REFERENCE
+1. https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_collapsible_accordion&stacked=h
+
+2. https://bootsnipp.com/snippets/featured/contact-us-page
+
+3. https://bootsnipp.com/snippets/featured/contact-us-page-->
